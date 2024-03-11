@@ -1,0 +1,225 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+/* About Section */
+.about-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 20px;
+    background-color: #e6e6e6;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+.project {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    /* margin: 10px; */
+    /* width: 200px; Square box dimensions */
+    /* height: 200px; Square box dimensions */
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 0;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 150px; /* Square box dimensions */
+    height: 150px; /* Square box dimensions */
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Recommendations Section */
+.recommendations-section {
+    padding: 20px;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 20px; /* Gap between columns */
+}
+
+.recommendation-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add Recommendation Section */
+.add-recommendation-section {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px auto; /* Center the section vertically */
+    max-width: 600px; /* Limit the width of the section */
+    border-radius: 10px; /* Add border radius for a rounded appearance */
+}
+
+/* Add Recommendation Section */
+.add-recommendation-section {
+    text-align: center; /* Center align content */
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+.add-recommendation-section h2 {
+    margin-top: 0;
+}
+
+#recommendation-form {
+    display: flex;
+    flex-direction: column; /* Align form items vertically */
+    align-items: center; /* Center align form items */
+}
+
+#name-input,
+#recommendation-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Go to Top Button */
+#goToTopBtn {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Ensure it's above other content */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#goToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Custom Alert */
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.alert-content {
+    margin-bottom: 20px;
+}
+
+.ok-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ok-button:hover {
+    background-color: #555;
+}

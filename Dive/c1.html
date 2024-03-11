@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1 class="styled-name">Manpreet Singh</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="profile-image">
+            <img src="Aesthetic Art.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>Hi, I'm Manpreet Singh!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum vehicula nunc, nec tincidunt neque pretium quis.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Description of Project 3</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skill">
+            <img src="html.png" alt="HTML Logo">
+            <p>HTML</p>
+        </div>
+        <div class="skill">
+            <img src="css.png" alt="CSS Logo">
+            <p>CSS</p>
+        </div>
+        <div class="skill">
+            <img src="js.png" alt="JavaScript Logo">
+            <p>JavaScript</p>
+        </div>
+    </section>
+
+    <section id="recommendations" class="recommendations-section">
+        <h2>Recommendations</h2>
+        <div class="recommendation-grid" id="recommendation-list">
+            <!-- Recommendations will be added dynamically using JavaScript -->
+        </div>
+    </section>
+
+    <section class="add-recommendation-section">
+        <h2>Add Recommendation</h2>
+        <form id="recommendation-form">
+            <input type="text" id="name-input" placeholder="Your Name (optional)">
+            <input type="text" id="recommendation-input" placeholder="Enter your recommendation">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to top">Top</button>
+
+    <div class="custom-alert" id="customAlert">
+        <div class="alert-content" id="alertContent"></div>
+        <button onclick="hideAlert()" class="ok-button">OK</button>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
